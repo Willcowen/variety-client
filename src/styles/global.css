@@ -66,19 +66,16 @@ nav a:hover, footer a:hover, .project-title:hover {
 
 .clothing {
   list-style-type: none;
-  /* background-color: #EBE7DE; */
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px; 
   border: 1px solid grey;
-  /* width: 475px;
-  height: 633px; */
 }
 
 .clothing-img {
   width: auto;
-  /* position: absolute; */
-  object-fit: cover;
+  position: relative;
+  object-fit: fill;
   top: 0;
   left: 0;
 }
@@ -153,7 +150,6 @@ input[type=text], input[type=number], input[type=email], select, textarea {
 }
 
 .sub-title {
-  display: inherit;
   font-size: 1em;
   color: black;
 }

@@ -34,20 +34,18 @@ export default function Products() {
 
   const sortAlphabetically = clothes => clothes.sort(compare)
 
-
   let filteredClothing = clothing
-  if (filter === 'a-z') {
+  if (filter === "a-z") {
     filteredClothing = sortAlphabetically(clothing)
   }
-  if (filter === 'price') {
+  if (filter === "price") {
     filteredClothing = sortByPrice(clothing)
   }
 
-
   return (
     <div>
-        <NavBar />
-        <div className="filters">
+      <NavBar />
+      <div className="filters">
         <label htmlFor="filters">Sort by..</label>
         <select
           id="filter-options"
@@ -58,23 +56,23 @@ export default function Products() {
           <option value="a-z">A-Z</option>
           <option value="price">Price</option>
         </select>
-        </div>
-        <h2 className="title">Men's Clothing</h2>
-        <ul className="clothing-container">
-          {filteredClothing.map(function (clothing, index) {
-            return (
-              <li className="clothing" key={index}>
-                <div>
-                  <h2 className="sub-title">{clothing.model}</h2>
-                </div>
-                <img className="clothing-img" src={clothing.imgUrl} />
-                <p>
-                  <strong>£{clothing.price}</strong>
-                </p>
-              </li>
-            )
-          })}
-        </ul>
       </div>
+      <h2 className="title">Men's Clothing</h2>
+      <ul className="clothing-container">
+        {filteredClothing.map(function (clothing, index) {
+          return (
+            <li className="clothing" key={index}>
+              {/* <div>
+                <h2 className="sub-title">{clothing.model}</h2>
+              </div> */}
+              <img className="clothing-img" src={clothing.imgUrl} />
+              {/* <p>
+                <strong>£{clothing.price}</strong>
+              </p> */}
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }

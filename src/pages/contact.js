@@ -6,20 +6,6 @@ export default function Contact() {
   return (
     <div>
     <NavBar />
-      <div className="top-of-contact">
-        <h2 className="title">Here To Help!</h2>
-        <p>
-          If you have any questions, check our{" "}
-          <Link to="/faqs">
-            <strong> FAQ's</strong>
-          </Link>{" "}
-          for the answer. If our
-          <Link to="/faqs">
-            <strong> FAQ's</strong>
-          </Link>{" "}
-          can't answer it for you, we'll be glad to answer you in person!
-        </p>
-      </div>
       <div className="wrapper">
         <div className="container">
           <form

@@ -1,10 +1,11 @@
 import React from "react"
-import Layout from "../components/Layout"
+import NavBar from "../components/NavBar"
 import { Link } from "gatsby"
 
 export default function Contact() {
   return (
-    <Layout>
+    <div>
+    <NavBar />
       <div className="top-of-contact">
         <h2 className="title">Here To Help!</h2>
         <p>
@@ -65,6 +66,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </Layout>
+      </div>
   )
 }

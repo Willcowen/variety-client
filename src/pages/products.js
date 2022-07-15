@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import Layout from "../components/Layout"
+import NavBar from "../components/NavBar"
 
 export default function Products() {
   const [clothing, setClothing] = useState([])
@@ -45,8 +45,8 @@ export default function Products() {
 
 
   return (
-    <Layout>
-      <div>
+    <div>
+        <NavBar />
         <div className="filters">
         <label htmlFor="filters">Sort by..</label>
         <select
@@ -76,6 +76,5 @@ export default function Products() {
           })}
         </ul>
       </div>
-    </Layout>
   )
 }

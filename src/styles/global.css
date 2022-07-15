@@ -5,7 +5,6 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: rgb(0, 0, 0);;
   box-sizing: border-box;
 }
 
@@ -16,7 +15,6 @@ html, body {
 body {
   background-color: white;
   background-size: cover;
-  margin: 10px;
 }
 
 p {
@@ -24,51 +22,33 @@ p {
   font-size: 1em;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 4em;
-  background-color: white;
-  border-top: 1px solid black;
-}
 
 /* layout & nav */
 
 .topnav {
   font-size: 1.3em;
   display: flex;
-  flex-direction: column;
+  background-color: rgb(64, 62, 62);
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  color: white;
+  padding: 2em;
 }
 
-.layout {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .links {
   display: flex;
   gap: 15px;
+  color: white;
+  text-decoration: none;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 35px auto;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-nav a {
-  display: inline-block;
-  font-weight: 400;
-  padding-bottom: 8px;
-} 
 
 nav a:hover, footer a:hover, .project-title:hover {
   border-color: black;
@@ -77,7 +57,7 @@ nav a:hover, footer a:hover, .project-title:hover {
 
 /* PRODUCTS PAGE */
 
-.shoe-container {
+/* .shoe-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -86,9 +66,9 @@ nav a:hover, footer a:hover, .project-title:hover {
   padding: 20px;
   gap: 15px;
   
-}
+} */
 
-.shoe {
+/* .shoe {
   list-style-type: none;
   background-color: #E9E8EB;
   text-align: center;
@@ -97,7 +77,7 @@ nav a:hover, footer a:hover, .project-title:hover {
   border: 1px solid grey;
   border-radius: 5px;
   
-}
+} */
 
 .shoe-img {
   max-width: 100%;
@@ -169,12 +149,13 @@ input[type=text], input[type=number], input[type=email], select, textarea {
 .title {
   font-size: 1.5em;
   text-align: center;
-  color: rgb(168, 145, 12);
+  color: white;
 }
 
 .sub-title {
   display: inherit;
   font-size: 1em;
+  color: black;
 }
 
 .input-text {

@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout"
+import NavBar from "../components/NavBar"
 
 export default function FAQs() {
   return (
     <div>
-      <Layout>
+      <NavBar>
         <div className="faqs">
         <h2 className="sub-title">FAQ's</h2>
          <div className="delivery">
@@ -20,7 +20,7 @@ export default function FAQs() {
           <p>Please be sure to refer to our <strong>sizing guide</strong>, for more info and finding the right fit for your feet! We stock LOTS of different brands and – just like clothing – they sometimes vary in their sizing. If you receive your shoes and they’re not an ideal fit, you can return the item, in an unused condition, to receive an exchange or refund.</p>
           </div>
         </div>
-      </Layout>
+      </NavBar>
     </div>
   )
 }

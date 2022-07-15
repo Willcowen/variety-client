@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: white;
+  background-size: cover;
+  margin: 10px;
+}
+
+p {
+  line-height: 2em;
+  font-size: 1em;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 4em;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+/* layout & nav */
+
+.topnav {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 35px auto;
+}
+
+nav a {
+  display: inline-block;
+  font-weight: 400;
+  padding-bottom: 8px;
+} 
+
+nav a:hover, footer a:hover, .project-title:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+/* PRODUCTS PAGE */
+
+.shoe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  gap: 15px;
+  
+}
+
+.shoe {
+  list-style-type: none;
+  background-color: #E9E8EB;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  
+}
+
+.shoe-img {
+  max-width: 100%;
+}
+
+/* FAQ's */
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.delivery, .returns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* CONTACT FORM */
+.top-of-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type=submit] {
+  background-color: yellow;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text], input[type=number], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container{
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.583);
+  border: 1px solid black;
+  padding: 20px;
+  width: 30em;
+}
+
+.wrapper {
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(168, 145, 12);
+}
+
+.sub-title {
+  display: inherit;
+  font-size: 1em;
+}
+
+.input-text {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#filter-options {
+  max-width: 250px;
+}
+
+
+

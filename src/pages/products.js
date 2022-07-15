@@ -5,20 +5,20 @@ export default function Products() {
   const [clothing, setClothing] = useState([])
   const [filter, setFilter] = useState("none")
 
-  // useEffect(() => {
-  //   loadClothing()
-  // }, [])
+  useEffect(() => {
+    loadClothing()
+  }, [])
 
-  // const loadClothing = () => {
-  //   fetch("http://localhost:4000/clothes")
-  //     .then(function (response) {
-  //       return response.json()
-  //     })
-  //     .then(function (json) {
-  //       console.log("clothes loaded!", json)
-  //       // setClothing(json.shoes)
-  //     })
-  // }
+  const loadClothing = () => {
+    fetch("http://localhost:4000/clothing")
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (json) {
+        console.log("clothes loaded!", json)
+        setClothing(json.shoes)
+      })
+  }
 
   const compare = (a, b) => {
     if (a.model < b.model) {

@@ -29,8 +29,8 @@ module.exports = {
     },
 ],
   siteMetadata: {
-    title: `Will Cowen`,
-    siteUrl: `http://www.willcowen.co.uk`,
-    description: `Will's personal website`,
+    title: `Variety`,
+    siteUrl: `-`,
+    description: `Clothing Site`,
   },
 }

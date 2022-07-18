@@ -62,13 +62,11 @@ export default function Products() {
         {filteredClothing.map(function (clothing, index) {
           return (
             <li className="clothing" key={index}>
-              {/* <div>
-                <h2 className="sub-title">{clothing.model}</h2>
-              </div> */}
               <img className="clothing-img" src={clothing.imgUrl} />
-              {/* <p>
+              <div className="product-info">
+                <h2 className="sub-title">{clothing.model}</h2>
                 <strong>£{clothing.price}</strong>
-              </p> */}
+              </div>
             </li>
           )
         })}

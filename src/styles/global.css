@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
@@ -21,7 +22,6 @@ p {
   line-height: 2em;
   font-size: 1em;
 }
-
 
 /* layout & nav */
 
@@ -36,7 +36,6 @@ p {
   padding: 2em;
 }
 
-
 .links {
   display: flex;
   gap: 15px;
@@ -49,8 +48,9 @@ a {
   color: white;
 }
 
-
-nav a:hover, footer a:hover, .project-title:hover {
+nav a:hover,
+footer a:hover,
+.project-title:hover {
   border-color: black;
   cursor: pointer;
 }
@@ -67,6 +67,12 @@ nav a:hover, footer a:hover, .project-title:hover {
 .clothing {
   list-style-type: none;
   text-align: center;
+}
+.clothing:hover .clothing-img + .product-info {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -60px;
 }
 
 .clothing-img {
@@ -87,7 +93,8 @@ nav a:hover, footer a:hover, .project-title:hover {
   padding: 20px;
 }
 
-.delivery, .returns {
+.delivery,
+.returns {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +111,7 @@ nav a:hover, footer a:hover, .project-title:hover {
   padding-right: 20px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: yellow;
   color: black;
   padding: 12px 20px;
@@ -113,7 +120,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=text], input[type=number], input[type=email], select, textarea {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -124,7 +135,7 @@ input[type=text], input[type=number], input[type=email], select, textarea {
   resize: vertical;
 }
 
-.container{
+.container {
   border-radius: 5px;
   background-color: rgba(211, 211, 211, 0.583);
   border: 1px solid black;
@@ -146,7 +157,17 @@ input[type=text], input[type=number], input[type=email], select, textarea {
   color: white;
 }
 
+.product-info {
+  display: none;
+  /* display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -40px; */
+}
+
+
 .sub-title {
+  display: inline-block;
   font-size: 1em;
   color: black;
 }
@@ -166,6 +187,3 @@ input[type=text], input[type=number], input[type=email], select, textarea {
 #filter-options {
   max-width: 250px;
 }
-
-
-

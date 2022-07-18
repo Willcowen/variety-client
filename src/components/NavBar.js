@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from 'react';
 import '../styles/global.css'
 
-export default function NavBar() {
+export default function NavBar({shoes}) {
   return (
     <nav className="topnav">
       <div>

@@ -188,3 +188,11 @@ textarea {
 #filter-options {
   max-width: 250px;
 }
+
+.products-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px;
+}

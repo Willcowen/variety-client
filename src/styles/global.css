@@ -67,17 +67,14 @@ nav a:hover, footer a:hover, .project-title:hover {
 .clothing {
   list-style-type: none;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px; 
-  border: 1px solid grey;
 }
 
 .clothing-img {
   width: auto;
   position: relative;
   object-fit: fill;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 }
 
 /* FAQ's */

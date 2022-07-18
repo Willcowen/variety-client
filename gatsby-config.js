@@ -28,9 +28,4 @@ module.exports = {
       }
     },
 ],
-  siteMetadata: {
-    title: `Variety`,
-    siteUrl: `-`,
-    description: `Clothing Site`,
-  },
 }

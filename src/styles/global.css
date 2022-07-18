@@ -60,14 +60,21 @@ footer a:hover,
 .clothing-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  width: calc(100% + 1px);
   background-color: white;
-  width: 100%;
+  height: auto;
 }
 
 .clothing {
   list-style-type: none;
   text-align: center;
+  border: 1px solid black;
+  height: auto;
 }
+
 .clothing:hover .clothing-img + .product-info {
   display: flex;
   justify-content: space-around;
@@ -77,12 +84,16 @@ footer a:hover,
 }
 
 .clothing-img {
-  width: auto;
+  display: block;
   position: relative;
-  object-fit: fill;
-  /* top: 0;
-  left: 0; */
+  object-fit: cover;
 }
+
+/* @media (max-width: 1200px) {
+  .clothing {
+    flex: 1 50%;
+  }
+} */
 
 /* FAQ's */
 

@@ -11,7 +11,7 @@ export default function Products() {
   }, [])
 
   const loadClothing = () => {
-    fetch("http://localhost:4000/clothing")
+    fetch("http://localhost:4000/shoes")
       .then(function (response) {
         return response.json()
       })

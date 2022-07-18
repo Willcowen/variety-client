@@ -45,8 +45,7 @@ export default function Products() {
   return (
     <div>
       <NavBar />
-      <div className="filters">
-        <label htmlFor="filters">Sort by..</label>
+      <div className="filters"> 
         <select
           id="filter-options"
           name="filters"

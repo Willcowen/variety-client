@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import NavBar from "../components/NavBar"
+import ProductsNav from "../components/ProductsNav"
 
 export default function Products() {
   const [clothing, setClothing] = useState([])
@@ -45,7 +46,9 @@ export default function Products() {
   return (
     <div>
       <NavBar />
-      <div className="filters"> 
+      <ProductsNav />
+      <div className="filters">
+        <label htmlFor="filters">Sort by..</label>
         <select
           id="filter-options"
           name="filters"
